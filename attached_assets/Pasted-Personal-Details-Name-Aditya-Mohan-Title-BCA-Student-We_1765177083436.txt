@@ -1,0 +1,148 @@
+Personal Details
+
+Name: Aditya Mohan
+
+Title: BCA Student / Web Developer
+
+Bio: I am a BCA student at Arcade Business College, 3rd year
+
+Contact: 6202759310
+
+Social Link: @adityamohan425
+
+2️⃣ Tech Stack
+
+Next.js (latest version, App Router)
+
+TypeScript
+
+Three.js for interactive 3D visuals
+
+Barba.js for page transitions
+
+TailwindCSS or SCSS for styling
+
+Framer Motion or GSAP for animations
+
+3️⃣ Theme
+
+Gen-Z Dark Theme: deep blacks, neon purples, electric blues, glitch pinks
+
+Glowing elements, noise/grain overlay
+
+Rave/cyber aesthetic
+
+Smooth, interactive animations and transitions
+
+Custom cursor and reactive lighting effects
+
+4️⃣ Pages & Features
+Home (Hero)
+
+Animated 3D background (Three.js)
+
+Bold hero text: “Hi, I’m Aditya Mohan”
+
+Subtitle: “BCA Student / Web Developer”
+
+Smooth entrance animation with Framer Motion/GSAP
+
+Optional: reactive light/glitch effects
+
+About
+
+Bio section with neon highlights
+
+Skills graph (bar or radial animation)
+
+Education timeline (scroll-based animation)
+
+Experience section (scroll-triggered reveal)
+
+Projects
+
+Animated project cards with 3D hover tilt effect
+
+Modal or dedicated detail page for each project
+
+Fields: title, description, tech stack, GitHub/live links, screenshots
+
+Contact
+
+Animated contact form with glowing input focus
+
+Display contact number and social link
+
+Optional 3D shape/avatar floating next to the form
+
+5️⃣ Project Structure
+
+Modular folders:
+
+app/
+  components/
+  three/
+  transitions/
+  styles/
+  lib/
+
+
+Layout includes: global animations, noise overlay, custom cursor
+
+Barba.js integrated for smooth page transitions
+
+Three.js components reusable and modular
+
+TypeScript types used throughout
+
+6️⃣ Animations
+
+Barba.js for page transitions (fade + slide + glitch)
+
+Framer Motion/GSAP for text entrance, scroll, and hover effects
+
+Three.js: particles, floating shapes, shader-based visuals
+
+7️⃣ Deliverables
+
+Complete runnable Next.js project
+
+Components: Navbar, Footer, Cursor, Noise Overlay, Project Card, Skill Graph
+
+Three.js scenes integrated
+
+Page transitions with Barba.js
+
+Global styles and theme constants
+
+JSON placeholder data for skills, education, projects
+
+Rules:
+
+Use real, professional placeholder content, no lorem ipsum
+
+Fully modular, production-ready, smooth animations
+
+Responsive design for all devices
+
+8️⃣ Generation Instructions for AI
+
+Step 1: Generate folder structure with all files
+
+Step 2: Generate layouts and global components
+
+Step 3: Generate Home page with Three.js hero animation
+
+Step 4: Generate About page with skills and timeline animations
+
+Step 5: Generate Projects page with animated cards and modals
+
+Step 6: Generate Contact page with animated form and 3D visual
+
+Step 7: Integrate Barba.js page transitions globally
+
+Step 8: Integrate TailwindCSS/SCSS theme colors, dark mode, neon/glow effects
+
+Step 9: Provide JSON placeholder data for projects, skills, education
+
+Step 10: Ensure the full project runs without errors
