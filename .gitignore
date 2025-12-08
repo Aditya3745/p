@@ -39,3 +39,6 @@ vite.config.ts.*
 
 # OS
 Thumbs.db
+
+# Replit
+.local/
