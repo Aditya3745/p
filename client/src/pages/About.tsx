@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { skills, education, experience, personalDetails } from "@/data/portfolio";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Briefcase, Code } from "lucide-react";
+import { GraduationCap, Briefcase, Code, User } from "lucide-react";
 
 export default function About() {
   const container = {
@@ -28,16 +28,31 @@ export default function About() {
         animate="show"
         className="max-w-4xl mx-auto space-y-16"
       >
-        {/* Bio Section */}
-        <motion.section variants={item} className="text-center md:text-left">
-          <h2 className="text-4xl font-display font-bold mb-6 text-primary text-glow">
-            About Me
-          </h2>
-          <div className="prose prose-invert max-w-none">
-            <p className="text-lg text-muted-foreground leading-relaxed border-l-4 border-secondary pl-6">
-              {personalDetails.bio}
-            </p>
-          </div>
+        {/* Profile Section */}
+        <motion.section variants={item} className="flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
+           <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white/10 z-10 box-glow group-hover:scale-105 transition-transform duration-500">
+                <img 
+                  src={personalDetails.avatar} 
+                  alt={personalDetails.name} 
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                />
+              </div>
+              {/* Glitch Overlay */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/50 opacity-0 group-hover:opacity-100 animate-ping z-0" />
+           </div>
+
+           <div className="flex-1 space-y-6">
+              <h2 className="text-4xl font-display font-bold text-primary text-glow flex items-center justify-center md:justify-start gap-3">
+                <User className="w-8 h-8" /> About Me
+              </h2>
+              <div className="prose prose-invert max-w-none">
+                <p className="text-lg text-muted-foreground leading-relaxed border-l-4 border-secondary pl-6 bg-secondary/5 py-2 rounded-r-lg">
+                  {personalDetails.bio}
+                </p>
+              </div>
+           </div>
         </motion.section>
 
         {/* Skills Section */}

@@ -1,3 +1,5 @@
+import adityaImage from "@assets/aditya_1765178265984.jpg";
+
 export const personalDetails = {
   name: "Aditya Mohan",
   title: "BCA Student / Web Developer",
@@ -5,6 +7,7 @@ export const personalDetails = {
   contact: "6202759310",
   email: "adityamohan425@gmail.com",
   social: "@adityamohan425",
+  avatar: adityaImage,
   socialLinks: {
     github: "https://github.com",
     linkedin: "https://linkedin.com",
