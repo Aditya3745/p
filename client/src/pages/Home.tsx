@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { personalDetails } from "@/data/portfolio";
 import { ArrowRight } from "lucide-react";
-import luffyBg from "@assets/generated_images/anime_pirate_with_straw_hat_looking_at_neon_cyber_city.png";
+import luffyBg from "@assets/generated_images/luffy_onigashima_raid_wallpaper.png";
 
 export default function Home() {
   return (
