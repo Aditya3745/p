@@ -6,9 +6,13 @@ import { fileURLToPath } from "url";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
 
-// Get __dirname equivalent for ESM
+// Get __dirname equivalent for ESM - works in all Node.js environments
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Ensure paths are absolute and normalized for cross-platform compatibility
+const clientDir = path.resolve(process.cwd(), "client");
+const distDir = path.resolve(process.cwd(), "dist", "public");
 
 const replitPlugins = process.env.NODE_ENV !== "production" &&
   process.env.REPL_ID !== undefined
@@ -42,9 +46,9 @@ export default defineConfig({
       plugins: [],
     },
   },
-  root: path.resolve(__dirname, "client"),
+  root: clientDir,
   build: {
-    outDir: path.resolve(__dirname, "dist", "public"),
+    outDir: distDir,
     emptyOutDir: true,
   },
   server: {
