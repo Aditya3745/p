@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -56,6 +57,15 @@ export default function Navbar() {
               </span>
             </Link>
           ))}
+          {/* Easter Egg Link - Hidden in plain sight/Subtle */}
+          <Link href="/secret">
+            <span 
+              className="text-xs font-mono text-muted-foreground/30 hover:text-accent cursor-pointer transition-colors"
+              title="???"
+            >
+              π
+            </span>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -86,6 +96,11 @@ export default function Navbar() {
               </span>
             </Link>
           ))}
+          <Link href="/secret">
+             <span onClick={() => setIsOpen(false)} className="text-sm font-mono text-muted-foreground mt-4 cursor-pointer">
+               Discover Secret
+             </span>
+          </Link>
         </div>
       </motion.div>
     </nav>

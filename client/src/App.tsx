@@ -9,6 +9,8 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
+import Gallery from "@/pages/Gallery";
+import EasterEgg from "@/pages/EasterEgg";
 
 function Router() {
   return (
@@ -17,7 +19,9 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
+        <Route path="/gallery" component={Gallery} />
         <Route path="/contact" component={Contact} />
+        <Route path="/secret" component={EasterEgg} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

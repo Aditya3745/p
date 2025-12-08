@@ -76,3 +76,42 @@ export const projects = [
     github: "#"
   }
 ];
+
+export const galleryImages = [
+  {
+    id: 1,
+    src: "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?q=80&w=1000",
+    title: "Neon City",
+    category: "Photography"
+  },
+  {
+    id: 2,
+    src: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000",
+    title: "Cyber Room",
+    category: "Setup"
+  },
+  {
+    id: 3,
+    src: "https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1000",
+    title: "Abstract Light",
+    category: "Art"
+  },
+  {
+    id: 4,
+    src: "https://images.unsplash.com/photo-1504384308090-c54be3855485?q=80&w=1000",
+    title: "Digital Waves",
+    category: "Abstract"
+  },
+  {
+    id: 5,
+    src: "https://images.unsplash.com/photo-1515630278258-407f66498911?q=80&w=1000",
+    title: "Code Matrix",
+    category: "Dev"
+  },
+  {
+    id: 6,
+    src: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000",
+    title: "Hardware",
+    category: "Tech"
+  }
+];
