@@ -10,9 +10,12 @@ import { metaImagesPlugin } from "./vite-plugin-meta-images";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Ensure paths are absolute and normalized for cross-platform compatibility
-const clientDir = path.resolve(process.cwd(), "client");
-const distDir = path.resolve(process.cwd(), "dist", "public");
+// Use __dirname for reliable path resolution (relative to config file)
+// This works consistently in all environments including Vercel
+const rootDir = __dirname;
+const clientDir = path.resolve(rootDir, "client");
+const distDir = path.resolve(rootDir, "dist", "public");
+const indexHtmlPath = path.resolve(clientDir, "index.html");
 
 const replitPlugins = process.env.NODE_ENV !== "production" &&
   process.env.REPL_ID !== undefined
@@ -50,6 +53,9 @@ export default defineConfig({
   build: {
     outDir: distDir,
     emptyOutDir: true,
+    rollupOptions: {
+      input: indexHtmlPath,
+    },
   },
   server: {
     host: "0.0.0.0",
