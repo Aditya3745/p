@@ -22,6 +22,9 @@ export async function setupVite(server: Server, app: Express) {
       ...viteLogger,
       error: (msg, options) => {
         viteLogger.error(msg, options);
+        // Critical: Exit on Vite errors to prevent running with broken middleware.
+        // If Vite fails to initialize properly, the middleware will be in a broken state
+        // and requests will fail unpredictably. It's safer to fail fast.
         process.exit(1);
       },
     },
